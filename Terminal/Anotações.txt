@@ -1,0 +1,28 @@
+args é um array que pode ser utilizado adicionando parâmetros via console
+
+chamando no terminal, na pasta bin
+comando:
+java <nome da aplicação> <parametro 1> <parametro ...n>
+
+utilizando no código cada parâmetro por posição do array >>> args[n] <<<
+
+
+-------------------
+Scanner
+
+ativa a entrada de dados pelo terminal por parte do usuário.
+
+import java.util.Locale;
+import java.util.Scanner;
+
+instanciar um objeto
+
+Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
+
+atribuir variáveis com o objeto:
+String nome = scanner.next();
+int idade = scanner.nextInt();
+
+Encerrar o scanner
+
+scanner.close();
